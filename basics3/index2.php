@@ -21,7 +21,7 @@ function getImgUrlTag ($url, $alt = null, $width = null, $height = null)
     }
     $tagStr .= '>';
     echo $tagStr;
-    return $tagstr;
+    return $tagStr;
 }
 
 include_once 'getImgUrlTagVsGlobal.php';
