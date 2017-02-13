@@ -22,4 +22,5 @@ function getImgUrlTagVsGlobal ($url, $alt = null, $width = null, $height = null)
     }
     $tagStr .= '>';
     echo $tagStr;
+    return $tagStr;
 }
