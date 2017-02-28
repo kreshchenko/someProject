@@ -14,6 +14,12 @@ class Ingredient
     private $name;
     private $cost;
 
+    function __construct($name, $cost)
+    {
+        $this->name = $name;
+        $this->cost = $cost;
+    }
+
     function getName()
     {
         if (isset($this->name) && !empty($this->name)){
