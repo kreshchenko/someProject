@@ -1,0 +1,13 @@
+{
+    "name": "root/sg-news.dev",
+    "require": {
+        "simplepie/simplepie": "dev-master",
+        "symfony/http-foundation": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "kreshchenko",
+            "email": "kreshchenkoi@gmail.com"
+        }
+    ]
+}
