@@ -1,0 +1,14 @@
+{
+    "name": "root/sg-news.dev",
+    "require": {
+        "monolog/monolog": "dev-master",
+        "symfony/http-foundation": "dev-master",
+        "symfony/routing": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "kreshchenko",
+            "email": "kreshchenkoi@gmail.com"
+        }
+    ]
+}
