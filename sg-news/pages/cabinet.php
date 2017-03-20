@@ -20,7 +20,7 @@
 
     foreach ($RSS as $item){
         echo '<pre>';
-        echo $item['name'].': '.$item['link'].PHP_EOL;
+        echo $item['name'].': '.$item['link']."<a href='/delete/".$item['id']."'>Видалити</a>";
         echo '</pre>';
     }          
 

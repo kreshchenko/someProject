@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita080d43f7fec56c03f93665902a6da8b
+class ComposerStaticInit790c7cb7d0b189119437f574488abcbd
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -50,11 +50,22 @@ class ComposerStaticInita080d43f7fec56c03f93665902a6da8b
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'S' => 
+        array (
+            'SimplePie' => 
+            array (
+                0 => __DIR__ . '/..' . '/simplepie/simplepie/library',
+            ),
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita080d43f7fec56c03f93665902a6da8b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita080d43f7fec56c03f93665902a6da8b::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit790c7cb7d0b189119437f574488abcbd::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit790c7cb7d0b189119437f574488abcbd::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit790c7cb7d0b189119437f574488abcbd::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

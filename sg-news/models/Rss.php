@@ -25,6 +25,11 @@
             $db = new PDO("mysql:host=localhost;dbname=sg_news;", "dbuser", "123");
             $sql = "DELETE FROM rss WHERE id = $id";
             $db->exec($sql);
+
+            $db = new PDO("mysql:host=localhost;dbname=sg_news;", "dbuser", "123");
+            $sql = "UPDATE rss SET flag = 0 WHERE rssId = $id";
+            $stmt = $db->prepare($sql);
+            $stmt->execute();
         }
 
         //Получить список всех ресурсов
@@ -60,12 +65,9 @@
 
             $result->execute();
 
-            $i=0;
-            $rss = [];
-            while ($row = $result->fetch()){
-                $rss[$i] = $row;
-                $i++; 
-            } 
+            $rss = $result->fetchAll(PDO::FETCH_COLUMN);
+            
             return $rss;
         }
+
     }

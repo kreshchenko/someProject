@@ -55,9 +55,19 @@
 
     $routes->add('post_cabinet_route', new Route('/cabinet/', array('_controller' => function($request){
         
-        include_once ('../pages/cabinet_post.php');
+        if ($session->get('qwe') == '123'){
+            include_once ('../pages/cabinet_post.php');
+        } else {
+            include ('../pages/cabinet_error_denied.php');
+        }
 
     }), array(), array(), '', array(), array('POST')));
+
+    $routes->add('delete_route', new Route('/delete/{id}', array('_controller' => function(){
+
+        include_once('../pages/delete.php');
+
+    })));
 
     $routes->add('index_route', new Route('/', array('_controller' => function(){
 
