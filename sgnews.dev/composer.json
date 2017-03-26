@@ -1,0 +1,13 @@
+{
+    "name": "root/sg-news.dev",
+    "require": {
+        "slim/slim": "3.8.0",
+        "doctrine/dbal": "^2.5"
+    },
+    "authors": [
+        {
+            "name": "kreshchenko",
+            "email": "kreshchenkoi@gmail.com"
+        }
+    ]
+}
